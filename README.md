@@ -23,19 +23,12 @@ The React  TodoApp is a  application for managing a todo list. It includes a bac
 - Node.js (v14 or higher)
 - Database (MySQL or MongoDB)
 
-
-# React Native TodoApp API
-Certainly! Here's the content as a markdown file:
-
-markdown
-
-# React Native TodoApp API
+#  TodoApp API
 
 This API provides endpoints for managing todos in the React Native TodoApp.
 
 ## Authentication
 
-```markdown
 ### POST /api/auth/register
 
 Register a new user.
@@ -47,36 +40,34 @@ Register a new user.
   "username": "example_user",
   "password": "example_password"
 }
+```
+#### Response code : 
 
-Response
+- **200 OK**: List of todos
+- **401 Unauthorized**: Missing or invalid token
+- **500 Internal Server Error**
 
-    201 Created: User registered successfully
-    500 Internal Server Error
-
-POST /api/auth/login
+###  POST /api/auth/login
 
 Authenticate a user and generate a JWT token.
 Request Body
 
-json
+```json
 
 {
   "username": "example_user",
   "password": "example_password"
 }
-
-Response
-
+```
+Response code
+```json
     200 OK: JWT token
     401 Unauthorized: Invalid credentials
     500 Internal Server Error
-
-csharp
-
+```
 
 ## Todos
 
-```markdown
 ### GET /api/todos
 
 Retrieve all todos.
@@ -98,48 +89,50 @@ Create a new todo.
   "title": "Example todo",
   "description": "Example description"
 }
-
+```
 Response
 
-    200 OK: Todo created successfully
-    401 Unauthorized: Missing or invalid token
-    500 Internal Server Error
-
-DELETE /api/todos/:id
+   
+- **200 OK**: List of todos
+- **401 Unauthorized**: Missing or invalid token
+- **500 Internal Server Error**
+- 
+### DELETE /api/todos/:id
 
 Delete a todo by ID.
 Parameters
 
     id: ID of the todo to delete
 
-Response
+#### Response
 
-    200 OK: Todo deleted successfully
-    401 Unauthorized: Missing or invalid token
-    500 Internal Server Error
+- **200 OK**: List of todos
+- **401 Unauthorized**: Missing or invalid token
+- **500 Internal Server Error**
 
-PUT /api/todos/update/:id
+
+### PUT /api/todos/update/:id
 
 Update a todo by ID.
 Parameters
 
     id: ID of the todo to update
 
-Request Body
+#### Request Body
 
-json
+ ```json
 
 {
   "title": "Updated todo",
   "description": "Updated description"
 }
+```
+#### Response
 
-Response
 
-    200 OK: Todo updated successfully
-    401 Unauthorized: Missing or invalid token
-    500 Internal Server Error
-
+- **200 OK**: List of todos
+- **401 Unauthorized**: Missing or invalid token
+- **500 Internal Server Error**
 
 
 ### installation 
@@ -148,21 +141,18 @@ Response
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone https://github.com/your-username/your-repository.git
-
-    Navigate to the backend directory:
-
-    bash
-
+   ```
+ Navigate to the backend directory:
+```
 cd your-repository/backend
-
+```
 Install the dependencies:
 
-bash
-
+```
 npm install
-
+```
 Configure the environment variables:
 
     Create a .env file in the backend directory.
