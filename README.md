@@ -35,12 +35,12 @@ Register a new user.
 
 #### Request Body
 
-```json
-{
-  "username": "example_user",
-  "password": "example_password"
-}
-```
+  ```json
+  {
+    "username": "example_user",
+    "password": "example_password"
+  }
+  ```
 #### Response code : 
 
 - **200 OK**: List of todos
@@ -52,13 +52,13 @@ Register a new user.
 Authenticate a user and generate a JWT token.
 Request Body
 
-```json
+  ```json
 
-{
-  "username": "example_user",
-  "password": "example_password"
-}
-```
+  {
+    "username": "example_user",
+    "password": "example_password"
+  }
+  ```
 Response code
 
 - **200 OK**: List of todos
@@ -83,12 +83,12 @@ Create a new todo.
 
 #### Request Body
 
-```json
-{
-  "title": "Example todo",
-  "description": "Example description"
-}
-```
+  ```json
+  {
+    "title": "Example todo",
+    "description": "Example description"
+  }
+  ```
 Response
 
    
@@ -114,18 +114,18 @@ Parameters
 
 Update a todo by ID.
 Parameters
+  ```
+      id: ID of the todo to update
+  ```
+  #### Request Body
 
-    id: ID of the todo to update
+   ```json
 
-#### Request Body
-
- ```json
-
-{
-  "title": "Updated todo",
-  "description": "Updated description"
-}
-```
+  {
+    "title": "Updated todo",
+    "description": "Updated description"
+  }
+  ```
 #### Response
 
 
@@ -144,14 +144,14 @@ Parameters
    git clone https://github.com/your-username/your-repository.git
    ```
 2. Navigate to the backend directory:
-```
-cd your-repository/backend
-```
+  ```
+  cd your-repository/backend
+  ```
 3. Install the dependencies:
 
-```
-npm install
-```
+  ```
+  npm install
+  ```
 4. Configure the environment variables:
 
     Create a .env file in the backend directory.
@@ -159,9 +159,9 @@ npm install
 
 5. Start the backend server:
 
-```
-npm start
-```
+  ```
+  npm start
+  ```
 The backend server will be running at `http://localhost:3000` .
 
 
