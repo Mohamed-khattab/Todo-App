@@ -60,11 +60,10 @@ Request Body
 }
 ```
 Response code
-```json
-    200 OK: JWT token
-    401 Unauthorized: Invalid credentials
-    500 Internal Server Error
-```
+
+- **200 OK**: List of todos
+- **401 Unauthorized**: Missing or invalid token
+- **500 Internal Server Error**
 
 ## Todos
 
@@ -144,48 +143,44 @@ Parameters
    ```
    git clone https://github.com/your-username/your-repository.git
    ```
- Navigate to the backend directory:
+2. Navigate to the backend directory:
 ```
 cd your-repository/backend
 ```
-Install the dependencies:
+3. Install the dependencies:
 
 ```
 npm install
 ```
-Configure the environment variables:
+4. Configure the environment variables:
 
     Create a .env file in the backend directory.
     Add the required environment variables and their values to the .env file. (Provide instructions on which environment variables need to be set and their purpose)
 
-Start the backend server:
+5. Start the backend server:
 
-bash
-
+```
 npm start
+```
+The backend server will be running at `http://localhost:3000` .
 
-The backend server will be running at http://localhost:3000.
 
 
+### Frontend
 
-Frontend
-
-    Navigate to the frontend directory:
-
-    bash
-
+1. Navigate to the frontend directory:
+```
 cd your-repository/frontend
-
-Install the dependencies:
-
-bash
-
+```
+2. Install the dependencies:
+```
 npm install
+```
+3. Start the frontend development server:
 
-Start the frontend development server:
 
-bash
-
+```
 npm start
+```
 
 The frontend development server will be running at http://localhost:3000.
